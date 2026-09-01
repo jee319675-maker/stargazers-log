@@ -12,3 +12,50 @@ li {
   padding: 0.5rem 0;
   border-bottom: 1px solid #ddd;
 }
+
+/* Styling for error and empty states */
+li.error-state {
+  color: #d32f2f;
+  font-weight: 500;
+  border-bottom: none;
+  padding: 1rem 0;
+}
+
+li.empty-state {
+  color: #666;
+  font-style: italic;
+  border-bottom: none;
+  padding: 1rem 0;
+}
+
+/* Error container styling */
+#starred-error {
+  color: #d32f2f;
+  font-weight: 500;
+  margin: 1rem 0;
+  padding: 0.75rem;
+  background-color: #ffebee;
+  border-left: 4px solid #d32f2f;
+  border-radius: 2px;
+  display: none;
+}
+
+#starred-error:not(:empty) {
+  display: block;
+}
+
+/* Noscript message styling */
+.noscript-message {
+  color: #d32f2f;
+  font-weight: 500;
+  padding: 1rem;
+  background-color: #ffebee;
+  border-left: 4px solid #d32f2f;
+  border-radius: 2px;
+}
+
+/* Loading state indicator (optional) */
+[aria-busy="true"] {
+  opacity: 0.6;
+  pointer-events: none;
+}
