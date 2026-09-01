@@ -8,7 +8,11 @@
   <body>
     <h1>Stargazers log</h1>
     <p>A log of the repositories I've starred.</p>
-    <ul id="starred"></ul>
+    <div id="starred-error" aria-live="off" role="status"></div>
+    <ul id="starred" aria-label="Starred repositories"></ul>
+    <noscript>
+      <p class="noscript-message">JavaScript is required to display the starred repositories list.</p>
+    </noscript>
     <script src="script.js"></script>
   </body>
 </html>
